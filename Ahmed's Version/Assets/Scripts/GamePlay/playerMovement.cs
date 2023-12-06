@@ -5,8 +5,11 @@ using UnityEngine;
 public class playerMovement : MonoBehaviour
 {
     public Rigidbody rB;
-    public float forwardForce = 2000f;
-    public float sidewayForce = 200f;
+
+    [SerializeField] private float forwardForce = 2000f;
+    [SerializeField] private float sidewayForce = 200f;
+    [SerializeField] private float jumpForce = 500f;
+
     public playerMovement Movement;
 
     // Start is called before the first frame update
@@ -31,7 +34,12 @@ public class playerMovement : MonoBehaviour
             rB.AddForce(-sidewayForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
         }
 
-        if(transform.position.y <= 0)
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            rB.AddForce(0, jumpForce * Time.deltaTime, 0, ForceMode.VelocityChange);
+        }
+
+        if (transform.position.y <= 0)
         {
             Movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
