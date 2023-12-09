@@ -12,13 +12,6 @@ public class playerMovement : MonoBehaviour
 
     public playerMovement Movement;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void FixedUpdate()
     {
         rB.AddForce(0, 0, forwardForce * Time.deltaTime);
@@ -44,8 +37,5 @@ public class playerMovement : MonoBehaviour
             Movement.enabled = false;
             FindObjectOfType<GameManager>().EndGame();
         }
-
-
-
     }
 }

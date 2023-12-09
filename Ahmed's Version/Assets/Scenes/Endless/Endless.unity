@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 62032715}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 309845014}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2936,7 +2936,7 @@ GameObject:
   - component: {fileID: 1606725944}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3544,7 +3544,7 @@ GameObject:
   - component: {fileID: 1854169744}
   m_Layer: 3
   m_Name: Ground
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3756,6 +3756,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: {fileID: 605947612}
+--- !u!114 &1981440459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453886665}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd4044ce4ba58e944a6ee3104e2642a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4000
+  sideSpeed: 20
+  jumpForce: 8.2
+  isOnGround: 1
 --- !u!4 &1998765464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 592398610091714247, guid: 8b5bb163b93af404ba0a87f4e3625b70, type: 3}
@@ -3900,11 +3916,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3291907561523717396, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
       propertyPath: jumpForce
-      value: 650
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291907561523717396, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3291907561523717396, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
       propertyPath: forwardForce
       value: 4000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3291907561523717396, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
+      propertyPath: WhatIsGround.m_Bits
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3291907561523717399, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
       propertyPath: m_RootOrder
