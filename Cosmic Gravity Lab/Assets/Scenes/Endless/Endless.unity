@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028334, g: 0.22571328, b: 0.3069217, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3772,6 +3772,19 @@ MonoBehaviour:
   sideSpeed: 20
   jumpForce: 8.2
   isOnGround: 1
+--- !u!114 &1981440466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453886665}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519f1e24d234c7f46a125b27c454e872, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  planetGravity: 0
 --- !u!4 &1998765464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 592398610091714247, guid: 8b5bb163b93af404ba0a87f4e3625b70, type: 3}
@@ -3897,6 +3910,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Main Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 1446210476204388285, guid: be6174b7f0bcf654596edc0ef1c5579f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446210476204388287, guid: be6174b7f0bcf654596edc0ef1c5579f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1446210476204388287, guid: be6174b7f0bcf654596edc0ef1c5579f, type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be6174b7f0bcf654596edc0ef1c5579f, type: 3}
 --- !u!1001 &3291907560081278122
@@ -3930,6 +3955,10 @@ PrefabInstance:
       propertyPath: WhatIsGround.m_Bits
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 3291907561523717397, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
+      propertyPath: Movement
+      value: 
+      objectReference: {fileID: 1981440459}
     - target: {fileID: 3291907561523717399, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3974,7 +4003,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3291907561523717396, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 12aaa0e6d5ed3484e81741ab6bc0b092, type: 3}
 --- !u!1001 &3888754589218329869
 PrefabInstance:

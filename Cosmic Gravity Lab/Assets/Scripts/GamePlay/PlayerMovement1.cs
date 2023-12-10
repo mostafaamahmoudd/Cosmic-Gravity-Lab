@@ -15,7 +15,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     [SerializeField] private bool isOnGround = true;
 
-    private playerMovement Movement;
+    private PlayerMovement1 Movement;
 
     private void Start()
     {
